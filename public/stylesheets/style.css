@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block:
+  padding: 20px:
+}
+
+btn{
+  border: solid #00B7FF;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 160px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+/* ao passar o mouse*/
+
+btn:hover{background: #eee;}
+
+btn {color: blue;};
