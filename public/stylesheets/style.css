@@ -1,30 +1,50 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #AACCFF;
+  background-color: #222233;
+  background-image: url("../kinvo/public/images/background.jpg");
+  
 }
 
 a {
   color: #00B7FF;
 }
 
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block:
-  padding: 20px:
+pre {
+  font-size: 90%;
+  line-height: 1.2em;
+  font-family: "Courier 10 Pitch", Courier, monospace; 
+  white-space: pre; 
+  white-space: pre-wrap; 
+  white-space: -moz-pre-wrap; 
+  white-space: -o-pre-wrap; 
+
+  height:1%;
+  width: auto;
+  display: block;
+  clear: both;
+  background-color: #faf8f0;
+  padding: 1em 1em;
+  margin: auto 4px auto 4px;
 }
-
-btn{
-  border: solid #00B7FF;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 160px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
+button {
+  
+    background-color: rgb(0, 52, 129); 
+    border: none;
+    color: rgb(252, 252, 252);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  float: left;
 }
-/* ao passar o mouse*/
+  button:hover {
+    background-color: rgb(2, 8, 90);
+    color: white;
+  }
 
-btn:hover{background: #eee;}
-
-btn {color: blue;};

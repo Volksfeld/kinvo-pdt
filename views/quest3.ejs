@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,14 +6,66 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    
     <h1><%= title %></h1>
     <b>Algoritmo do rei.</b>
-    <p style = "text-align:center;">Questao dificil, ja volto</p>
+    <p style = "text-align:center;">Para essa questão</p>
     <img src="/images/tabuleiro.jpg" alt="tabuleiro" height="380" width="400" />
+    <script>
+      function calcul() {
+
+          /*Pega o valor do text_input */
+          var inputValue = document.getElementById('factorialTxtId').value;
+          /*Testa se é um numero */
+          var checkValue = isNaN(inputValue);
+          /*Se for falso, retorna nada */
+          var n = 64;
+          var q = 2;
+          var a1 = 1;
+          var final = 1;
+            
+                  if(q != 1){
+                      final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
+                      alert(final);
+                  } else {
+                      alert("q não pode ser menor que 2");
+                  }
+              } else {
+                  alert("n tem que ser um número");
+              }
+          if (!checkValue) {
+              /*seta html */
+              document.getElementById('inputValueID').innerHTML = inputValue;
+              var final = 1;
+              }
+              
+              document.getElementById('checkValue').innerHTML = final;
+          }
+}
+    </script>
+    <div>
+      <input type="text" class="text_input" id="factorialTxtId"/> <input type="button" value="Calcul" 
+      id="factorialButtonId" onclick="calcul()"/>
+      <div>
+      Fatoração das 64 casas <span id="inputValueID"></span> is: <div id="checkValue"></div>
+      </div>
+    </div>
     <pre>
       <code>
-        p { color: red;}
-        body {background-color: #eee;}
+          var n = 64;
+          var q = 2;
+          var a1 = 1;
+          var final = 1;
+            
+                  if(q != 1){
+                      final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
+                      alert(final);
+                  } else {
+                      alert("q não pode ser menor que 2");
+                  }
+              } else {
+                  alert("n tem que ser um número");
+              }
       </code>
     </pre>
     
