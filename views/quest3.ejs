@@ -5,93 +5,72 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="icon" href="/images/favicon.ico" />
+    <nav>
+    <div class="dropdown">
+        <button class="dropbtn">Questões</button>
+          <div class="dropdown-content">
+            <form method="get" action="quest1">
+              <button type="btn q1"> Questão 1</button>
+            </form>
+            <form method="get" action="quest2">
+              <button type="btn q2"> Questão 2</button>
+            </form>
+            <form method="get" action="quest4">        
+              <button type="btn q4"> Questão 4</button>
+            </form>
+            <form method="get" action="quest5">
+              <button type="btn q5"> Questão 5</button>
+            </form>
+        </div>
+      </div>
+    </nav>
   </head>
   <body>
-    
+    <main>
     <h1><%= title %></h1>
     <b>Algoritmo do rei.</b>
     <p>Para essa questão, é necessário saber quantas casas existem em um tabuleiro de xadrez.
     O tabuleiro possui 64 casas, e, como o pagamento é feito em grãos, segue da seguinte forma:<br> Primeira casa - 1 grão<br>
     Segunda casa - 2 grãos.<br>Terceira casa - 4 grãos<br>Enésima casa - n grãos.<br>
-    Configura-se então, uma Progressão Geométrica, de razão 2, sendo facilmente solucionada pela formula proposta.<br></p>
-    <img src="/images/tabuleiro.jpg" alt="tabuleiro" height="380" width="400" />
+    Configura-se então, uma Progressão Geométrica, de razão 2, sendo facilmente solucionada pela formula proposta.<br>
+    Sendo assim, o resultado da soma de todos os termos(casas do tabuleiro) multiplicados pela razão 2 é: 18.446.744.073.709.552.000<br></p>
+    <img src="/images/tabuleiro.jpg" alt="tabuleiro" align="right"height="380" width="400"/>
     <script>
       function calcul() {
-
-          /*Pega o valor do text_input */
-          var inputValue = document.getElementById('factorialTxtId').value;
-          /*Testa se é um numero */
-          var checkValue = isNaN(inputValue);
-          /*Se for falso, retorna nada */
           var n = 64;
           var q = 2;
           var a1 = 1;
-          var final = 1;
-            
-                  if(q != 1){
+          var final = 1;  
+          
+          var checkValue = isNaN(final);
+          
+            if(q != 1){
                       final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
                       alert(final);
-                  } else {
-                      alert("q não pode ser menor que 2");
-                  }
-              } else {
-                  alert("n tem que ser um número");
-              }
-          if (!checkValue) {
-              /*seta html */
-              document.getElementById('inputValueID').innerHTML = inputValue;
-              var final = 1;
-              }
-              
-              document.getElementById('checkValue').innerHTML = final;
-          }
+            }
 }
     </script>
-    <div>
-      <input type="text" class="text_input" id="factorialTxtId"/> <input type="button" value="Calcul" 
-      id="factorialButtonId" onclick="calcul()"/>
-      <div>
-      Fatoração das 64 casas <span id="inputValueID"></span> is: <div id="checkValue"></div>
-      </div>
+    <div class="dropdown">
+         <input class="dropbtn"  type="button" value="Somar todos os números da PG." 
+          id="calcPg" onclick="calcul()"/>
     </div>
+    <div>
+       <span id="inputValueID"></span> <div id="checkValue"></div>
+    </div>
+    
     <pre>
       <code>
+        function calcul(){
           var n = 64;
           var q = 2;
           var a1 = 1;
           var final = 1;
-            
-                  if(q != 1){
-                      final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
-                      alert(final);
-                  } else {
-                      alert("q não pode ser menor que 2");
-                  }
-              } else {
-                  alert("n tem que ser um número");
-              }
+              if(q != 1){
+                final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
+                alert(final);
+        }     
       </code>
     </pre>
-    
-    <div class="dropdown">
-            <button class="dropbtn">Questões</button>
-              <div class="dropdown-content">
-                <form method="get" action="/">
-                  <button type="btn h"> Home</button>
-                </form>
-                <form method="get" action="quest1">
-                  <button type="btn q1"> Questão 1</button>
-                </form>
-                <form method="get" action="quest2">
-                  <button type="btn q2"> Questão 2</button>
-                </form>
-                <form method="get" action="quest4">        
-                  <button type="btn q4"> Questão 4</button>
-                </form>
-                <form method="get" action="quest5">
-                  <button type="btn q5"> Questão 5</button>
-                </form>
-            </div>
-          </div>
+    </main>
   </body>
 </html>

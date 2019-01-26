@@ -4,22 +4,13 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="icon" href="/images/favicon.ico" />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <b>Celular para pessoas com deficiência visual.</b>
-    <p>Para deficientes visuais, gostaria de ir além das plataformas de acessibilidade
-    já existentes. Além dos áudios, o celular teria teclas laterais programáveis e um sistema de vibraçāo 
-    inteligente, que pudesse simular a leitura em braile e principalmente, uma assistente virtual completamente
-    eficiente, que pudesse auxiliar o defiente em tarefas mais básicas, e fosse autonoma o suficiente para saber
-    , por exemplo, momentos oportunos para colocar o celular no silencioso sozinho.</p>
-    
+    <nav>
     <div class="dropdown">
         <button class="dropbtn">Questões</button>
           <div class="dropdown-content">
-            <form method="get" action="/">
-              <button type="btn h"> Home</button>
-            </form>
+              <form method="get" action="/">
+                <button type="btn h"> Home</button>
+              </form>
             <form method="get" action="quest1">
               <button type="btn q1"> Questão 1</button>
             </form>
@@ -34,5 +25,17 @@
             </form>
         </div>
       </div>
+    </nav>
+  </head>
+  <body>
+    <main>
+    <h1><%= title %></h1>
+    <b>Celular para pessoas com deficiência visual.</b>
+    <p>Para deficientes visuais, gostaria de ir além das plataformas de acessibilidade
+    já existentes. Além dos áudios, o celular teria teclas laterais programáveis e um sistema de vibraçāo 
+    inteligente, que pudesse simular a leitura em braile e principalmente, uma assistente virtual completamente
+    eficiente, que pudesse auxiliar o defiente em tarefas mais básicas, e fosse autonoma o suficiente para saber
+    , por exemplo, momentos oportunos para colocar o celular no silencioso sozinho.</p>
+    </main>
   </body>
 </html>

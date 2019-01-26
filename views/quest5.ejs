@@ -4,8 +4,31 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="icon" href="/images/favicon.ico" />
+    <nav>
+    <div class="dropdown">
+        <button class="dropbtn">Questões</button>
+          <div class="dropdown-content">
+              <form method="get" action="/">
+                <button type="btn h"> Home</button>
+              </form>
+            <form method="get" action="quest1">
+              <button type="btn q1"> Questão 1</button>
+            </form>
+            <form method="get" action="quest2">
+              <button type="btn q2"> Questão 2</button>
+            </form>
+            <form method="get" action="quest3">
+              <button type="btn q3"> Questão 3</button>
+            </form>
+            <form method="get" action="quest4">        
+              <button type="btn q4"> Questão 4</button>
+            </form>
+          </nav>
+        </div>
+      </div>
   </head>
   <body>
+    <main>
     <h1><%= title %></h1>
     <b>Como eu explicaria o que é BD para meu sobrinho de 8 anos?</b>
   <p> - Banco de dados é como um gaveteiro. Se você for bem organizado, cada gaveta
@@ -14,26 +37,6 @@
   quadradinhos, para, por exemplo, um para carros vermelhos, outro quadrado para carros azuis. Assim, fica muito
   mais fácil achar e usar seus brinquedos. Porém, no banco de dados de verdade, nós guardamos nomes, emials, senhas
   e coisas assim. Uma gaveta pra nomes, e dentro dela, os quadradinhos podem ser o tipo de usuário que foi cadastrado.</p> 
-    
-  <div class="dropdown">
-      <button class="dropbtn">Questões</button>
-        <div class="dropdown-content">
-          <form method="get" action="/">
-            <button type="btn h"> Home</button>
-          </form>
-          <form method="get" action="quest1">
-            <button type="btn q1"> Questão 1</button>
-          </form>
-          <form method="get" action="quest2">
-            <button type="btn q2"> Questão 2</button>
-          </form>
-          <form method="get" action="quest3">
-            <button type="btn q3"> Questão 3</button>
-          </form>
-          <form method="get" action="quest4">        
-            <button type="btn q4"> Questão 4</button>
-          </form>
-      </div>
-    </div>
+    </main>
   </body>
 </html>

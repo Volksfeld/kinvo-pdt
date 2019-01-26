@@ -4,38 +4,41 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="icon" href="/images/favicon.ico" />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <b>Ambiente de desenvolvimento preferido?</b>
-      <p>Certo, eu sigo dois tipos de workflow, a depender da tarefa que preciso fazer:<br>
-      Workflow 1 -> MacOS e Windows. Uso especialmente para web, pois devido as minhas limitações(por enquanto),
-      fica mais fácil de navegar pela cloud e utilizar o pai Google. Também tenho Photoshop no Windows, e assim, 
-      ao precisar estilizar algo, tenha a mão.<br>
-      Worflow 2 -> MacOS e Ubuntu. Uso para qualquer outra tarefa de programação, pois tenho todos os meu pacotes
-      e dependências já prontos no linux, sem contar da facilidade que o bash proporciona.<br>
-      Para programar, uso qualquer coisa, até bloco de notas, mas o editor de minha preferência é o VSCODE, para
-      tudo, e o Eclipse, para Java. Uso muito bash também.</p>
-    
-      <div class="dropdown">
-          <button class="dropbtn">Questões</button>
-            <div class="dropdown-content">
+    <nav>
+    <div class="dropdown">
+        <button class="dropbtn">Questões</button>
+          <div class="dropdown-content">
               <form method="get" action="/">
                 <button type="btn h"> Home</button>
               </form>
-              <form method="get" action="quest1">
-                <button type="btn q1"> Questão 1</button>
-              </form>
-              <form method="get" action="quest3">
-                <button type="btn q3"> Questão 3</button>
-              </form>
-              <form method="get" action="quest4">        
-                <button type="btn q4"> Questão 4</button>
-              </form>
-              <form method="get" action="quest5">
-                <button type="btn q5"> Questão 5</button>
-              </form>
-          </div>
+            <form method="get" action="quest1">
+              <button type="btn q1"> Questão 1</button>
+            </form>
+            <form method="get" action="quest3">
+              <button type="btn q3"> Questão 3</button>
+            </form>
+            <form method="get" action="quest4">        
+              <button type="btn q4"> Questão 4</button>
+            </form>
+            <form method="get" action="quest5">
+              <button type="btn q5"> Questão 5</button>
+            </form>
         </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <main>
+    <h1><%= title %></h1>
+    <b>Ambiente de desenvolvimento preferido?</b>
+      <p>Certo, eu sigo dois tipos de workflow, a depender da tarefa que preciso fazer:<br><br>
+      Workflow 1 -> MacOS e Windows. Uso especialmente para web, pois devido as minhas limitações(por enquanto),
+      fica mais fácil de navegar pela cloud e utilizar o pai Google. Também tenho Photoshop no Windows, e assim, 
+      ao precisar estilizar algo, tenha a mão.<br><br>
+      Worflow 2 -> MacOS e Ubuntu. Uso para qualquer outra tarefa de programação, pois tenho todos os meu pacotes
+      e dependências já prontos no linux, sem contar da facilidade que o bash proporciona.<br><br>
+      Para programar, uso qualquer coisa, até bloco de notas, mas o editor de minha preferência é o VSCODE, para
+      tudo, e o Eclipse, para Java. Uso muito bash também.</p>
+    </main>
   </body>
 </html>
