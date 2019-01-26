@@ -1,11 +1,23 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
   background-color: #031118;
   background-image: url("/images/background.jpg");
   
+  
 }
+
+h1 {
+  text-align: center;
+  font-family: monospace; 
+  font-size: 38px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+}
+
 
 a {
   color: #00B7FF;
@@ -24,24 +36,24 @@ pre {
   width: auto;
   display: block;
   clear: both;
-  background-color: #faf8f0;
+  background-color: #000000ab;
   padding: 1em 1em;
   margin: auto 4px auto 4px;
 }
 button {
   
-    background-color: #EBC944; 
+    background-color: rgba(0, 0, 0, 0.808); 
     border: none;
-    color: #000000;
+    color: #ffffff;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     
     font-size: 16px;
     -webkit-transition-duration: 0.4s; 
-  transition-duration: 0.4s;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
-  float: left;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+    
 }
   button:hover {
     background-color: rgb(2, 8, 90);
@@ -50,8 +62,8 @@ button {
 
   /* Dropdown Button */
 .dropbtn {
-  background-color: #EBC943;
-  color: #000000;
+  background-color: rgba(0, 0, 0, 0.808);
+  color: #ffffff;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -67,7 +79,7 @@ button {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #EBC944;
+  background-color: rgb(0, 0, 0.808);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
