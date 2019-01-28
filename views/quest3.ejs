@@ -9,6 +9,9 @@
     <div class="dropdown">
         <button class="dropbtn">Questões</button>
           <div class="dropdown-content">
+              <form method="get" action="/">
+              <button type="btn h"> Home</button>
+            </form>
             <form method="get" action="quest1">
               <button type="btn q1"> Questão 1</button>
             </form>
@@ -65,8 +68,9 @@
           var q = 2;
           var a1 = 1;
           var final = 1;
-              if(q != 1){
-                final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
+              
+            if(q != 1){
+              final = (a1 * (Math.pow(q, n) - 1))/(q - 1);
                 alert(final);
         }     
       </code>
